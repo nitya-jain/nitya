@@ -1,0 +1,44 @@
+/* Header styles */
+
+h1{
+	color:red;
+}
+h3{
+	color:red;
+}
+h4{color:blue;
+}
+#h1green{
+	color:green;
+}
+.center{
+	margin:auto;
+	text-align: center;
+}
+div h1{
+	background-color: gray;
+}
+p{
+	font-family: "Open Sans",sans-serif;
+	padding: 10px;
+	display: inline-block;
+	margin:0;
+}
+.div-width {
+	width:300px;
+	display: inline-block;
+}
+.container{
+	text-align: center;
+	width:50%;
+	margin:auto;
+}
+
+
+
+@font-face{
+	font-family: "My custom font"
+	src:url(/fonts/mycustomfont.ttf),
+	url(./fonts/mycustomfont.eot);
+	font-weight: 700;
+}
