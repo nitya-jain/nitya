@@ -12,10 +12,25 @@ section {
     font-size: 48px;
 }
 div#logo {
-    font-size: 48px;
-    text-align: center;
-    line-height:126px;
+    text-align: center; 
     width: 100%;
-    padding: 0;
-    color: #333;
+    padding: 10px;  
 }
+section#home {
+    background-image:url(images/home.jpg);
+    background-size: cover;
+}
+section#about {
+    background-image:url(images/profile.jpg);
+    height:500px;
+    background-repeat: no-repeat;
+    right:0;
+}
+section#contact {
+    background-image:url(images/contact.jpg);
+    background-repeat: no-repeat;
+}
+section#portfolio {
+    background-color: #BAC1B8;
+    height:650px;
+}   
