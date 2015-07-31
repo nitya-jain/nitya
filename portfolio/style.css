@@ -16,7 +16,7 @@ div#logo {
     padding: 10px;  
 }
 section#home {
-    background-image:url(images/home.jpg);
+    background-color:#9BC1BC;
     background-size: cover;
     height:500px;
 }
@@ -27,7 +27,7 @@ section#about {
     right:0;
 }
 
-section#portfoli {
+section#portfolio {
     background-color: #BAC1B8;
     height:650px;
 } 
