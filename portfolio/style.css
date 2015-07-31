@@ -1,8 +1,7 @@
-body {
-    font-family: san-serif;
-}
+
+
 main {
-    height: 100%;
+    min-height: 100%;
 }
 section {
     min-height: 400px;
@@ -19,6 +18,7 @@ div#logo {
 section#home {
     background-image:url(images/home.jpg);
     background-size: cover;
+    height:500px;
 }
 section#about {
     background-image:url(images/profile.jpg);
@@ -26,11 +26,19 @@ section#about {
     background-repeat: no-repeat;
     right:0;
 }
+
+section#portfoli {
+    background-color: #BAC1B8;
+    height:650px;
+} 
+
 section#contact {
     background-image:url(images/contact.jpg);
     background-repeat: no-repeat;
 }
-section#portfolio {
-    background-color: #BAC1B8;
-    height:650px;
-}   
+
+.ui.form.segment {
+    background-color: transparent;
+    padding: 2em;
+    margin-top: 2em;
+}
