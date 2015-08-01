@@ -9,7 +9,6 @@
 }
 
 .container {
-	margin:auto;
 	width:1110px; 
 	position:relative;
 }
@@ -17,7 +16,6 @@
 #logo {
 	width: 90px;
 	height: 90px;
-	background-color: beige;
 	border-radius: 15px;
 	position:absolute;
 	top:20px;
