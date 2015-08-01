@@ -24,26 +24,76 @@ a.icon {
 .form.container {
 	padding: 2em;
 }
+.input {
+	margin:1em;
+}
 .input input {
     width: 30em;
     height: 2em;
     font-size: 1em;
     margin-bottom: 1em;
     border-radius: 0.4em;
+    border: 1px solid gray;
     padding: 0.5em;
 }
 form {
 	margin: 0;
 }
-.event {
-	width: 10em;
-}
 
-textarea#styled {
-	width: 27em;
+ .input.event {
+ 	margin-bottom: 1em;
+ }
+
+select.styled {
+	display: inline-block;
+}
+textarea.styled {
+	width: 35em;
 	height: 13em;
 	border: 3px solid #cccccc;
 	padding: .4em;
 	color: gray;
 	border-radius: .6em;
+	display: block;
+	border: 1px solid gray;
+}
+.input label {
+	width:4em;
+	display: inline-block;
+}
+
+.btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  color: #ffffff;
+  background: #6d3035;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  margin-bottom: 0;
+  border:none;
+}
+
+.btn:hover {
+  background: #AFC6A7;
+  text-decoration: none;
+}
+
+select.styled {
+   -webkit-appearance:none
+   width: 240px;
+   height: 34px;
+   overflow: hidden;
+   border: 1px solid #ccc;
+   font-size: .8em;
+}
+
+.comment h2 {
+	display: inline-block;
+	margin-bottom:0.4em;
+	margin-top: 0;
+}
+.comment p {
+	margin: 0;
+	color:#23261B;
 }
