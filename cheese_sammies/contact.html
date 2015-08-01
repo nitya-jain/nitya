@@ -1,0 +1,204 @@
+<DOCTYPE html>
+<html lang="en">
+<meta char set="utf8">
+<head>
+	<title>Cheese Sammies/Contact</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href="normalize.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="main.css" text="type/css">
+	<link rel="stylesheet" href="contact.css" text="type/css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+</head>
+<body class="homepage">
+	<header id="header">
+		<div class="container">
+			<a id="logo" href="http://www.cheesesammies.com">
+				<img class="main-logo" src="images/cs.svg" 
+				alt="C.S."/>
+			</a>
+			<div class="name">
+				<img src="images/logo.svg" alt="logo"/>
+			</div>
+			<div class="nav">
+				<ul>
+					<li>
+					<a href="http://www.cheesesammies.com">Home</a>
+					</li>
+					<li>
+					<a href="http://www.cheesesammies.com/menu">Menu</a>
+					</li>
+					<li>
+					<a href="http://www.cheesesammies.com/location">Location</a>
+					</li>
+					<li>
+					<a href="http://www.cheesesammies.com/about">About</a>
+					</li>
+					<li>
+					<a href="http://www.cheesesammies.com/contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="contact">
+		<div id="social">
+				<ul>
+					<li>
+						<a  class="icon" href="http://www.twitter.com" target="_blank"><i class="fa fa-2x fa-twitter-square"></i></a>
+					</li>
+					<li>
+						<a class="icon" href="http://www.facebook.com" target="_blank"><i class="fa fa-2x fa-facebook-official"></i></a>
+					</li>
+					<li>
+						<a class="icon" href="http://www.instagram.com" target="_blank"><i class="fa fa-2x fa-instagram"></i></a>
+					</li>
+					<li>
+					<a class="icon" href="http://www.yelp.com" target="_blank"><i class="fa fa-2x fa-yelp"></i></a>
+					</li>
+					<li><a class="icon" href="http://www.blogspot.com" target="_blank"><i class="fa fa-2x fa-rss-square"></i></a>
+					</li>
+				</ul>
+		</div>
+		<div class="form container">
+			<div class="comment">
+				<h2>Contact us</h2>
+				<p>Private catering, weddings,pick-ups & more.I would love to hear from you so drop in a line.</p>
+			</div>
+			<form action="http://www.cheesesammies.com/contact.php" method="get">
+				<div class="input">
+					<label>Name:</label>
+					<input type="text" placeholder="name please" maxlength="100"/>
+				</div>	
+				<div class="input">
+					<label>E-mail:</label>
+					<input type="text" placeholder="email address" maxlength="120"/>
+				</div>
+				<div class="input">
+					<label>Phone:</label>
+					<input type="number" placeholder="number" maxlength="12"/>
+				</div>
+				<div class="input">
+					</label>Event:</label>
+					<select name="event">
+						<option value="Catering">Catering</option>
+						<option value="Wedding">Wedding</option>
+						<option value="Fundraising">Fundraising</option>
+						<option value="Privateparty">Private party</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				<div class="input">	
+					<label>Comments:</label>
+					<textarea name="comments" col="30" rows="5"></textarea>
+				</div>
+				<div class="button">
+					<button class="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<section class="bottom">
+		<footer class="container footer">
+			<div class="one-third">
+				<h4>Hello there!</h4>
+				<p>My name is Bryan and I love cheese!</p>
+				<p>I was born and raised in East Boston. After a long stint in video production,I quit my job and am here in my community,to make the best grilled sandwiches for you in under ten minutes. So come and enjoy.</p>
+			</div>
+			<div class="one-third">
+				<h4>Locations</h4>
+                 <div id="map-container">
+               	</div>
+			</div>
+
+			<div class="one-third">
+				<h4>Schedule</h4>
+				<div id="place1" class="location">
+					<div class="address">
+						<a href="#">Downtown</br>City Hall Plaza.<span>-Fisher Park</span></a>
+					</div>
+					<div class="day">
+						<p>MON</p>
+					</div>
+				</div>
+				<div id="place2" class="location">
+					<div class="address">
+						<a href="#">South End - Harrison Ave &amp<br/> E Concord St, by BMC</a>
+					</div>
+					<div class="day">
+						<p>TUE<br/>THU</p>
+					</div>
+				</div>
+				<div id="place3" class="location">
+					<div class="address">
+						<a href="#">Back Bay</br>Trinity Place</a>
+					</div>
+					<div class="day">
+						<p>WED<br/>FRI</p>
+					</div>
+				</div>
+				<div id="place4" class="location">
+					<div class="address">
+						<a href="#">Dudley square</br>Dudley Street</a>
+					</div>
+					<div class="day">
+						<p>SAT</p>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">&copy; CHEESE SAMMIES, ALL RIGHTS RESERVED.
+			</div>
+		</footer>
+	</section>
+<script type='text/javascript'>//<![CDATA[ 
+$(function () {
+    var mapOptions = {
+        center: new google.maps.LatLng(42.3598697, -71.0584351),
+        zoom: 12,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true
+    }
+    var image = {
+        url: "Food-Truck-Icon.png",
+        size: new google.maps.Size(45, 45),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(22, 44)
+    };
+    var map = new google.maps.Map($("#map-container")[0], mapOptions);
+    var locations = {
+        place1: new google.maps.LatLng(42.3590414, -71.0632409),
+        place2: new google.maps.LatLng(42.3228611,-71.0800759),
+        place3: new google.maps.LatLng(42.3529135, -71.0778234),
+        place4: new google.maps.LatLng(42.3486047,-71.0753806)
+    };
+    $("div.location")
+    .each(function (i) {
+        this.mapMarker = new google.maps.Marker({
+            position:
+            locations[this.id],
+            icon: image,
+            map: map});
+    })
+    .mouseenter(function() {
+        this.mapMarker.setAnimation(google.maps.Animation.DROP);
+    })
+    .mouseleave(function() {
+        this.mapMarker.setAnimation(null);
+    })
+    .click(function() {
+        map.panTo(this.mapMarker.getPosition());
+        map.setZoom(15);
+    })
+    ;
+});
+//]]>  
+</script>
+</body>
+</html>
+
+
+	
+
+	
+
+
