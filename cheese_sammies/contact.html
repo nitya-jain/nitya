@@ -76,21 +76,21 @@
 				</div>
 				<div class="input">
 					<label>Phone:</label>
-					<input type="number" placeholder="number" maxlength="12"/>
+					<input type="text"placeholder="number"/>
 				</div>
 				<div class="input">
-					</label>Event:</label>
+					</label class="event">Event:</label>
 					<select name="event">
 						<option value="Catering">Catering</option>
 						<option value="Wedding">Wedding</option>
 						<option value="Fundraising">Fundraising</option>
-						<option value="Privateparty">Private party</option>
+						<option value="Private party">Private party</option>
 						<option value="other">Other</option>
 					</select>
 				</div>
 				<div class="input">	
 					<label>Comments:</label>
-					<textarea name="comments" col="30" rows="5"></textarea>
+					<textarea name="styled-textarea" id="styled" onfocus="this.value=''; setbg('#e5fff3');" onblur="setbg('white')">Enter your comment here..</textarea>
 				</div>
 				<div class="button">
 					<button class="submit">Submit</button>

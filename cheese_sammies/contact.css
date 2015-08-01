@@ -25,11 +25,25 @@ a.icon {
 	padding: 2em;
 }
 .input input {
-    width: 25em;
+    width: 30em;
     height: 2em;
-    font-size: 1.5em;
+    font-size: 1em;
     margin-bottom: 1em;
+    border-radius: 0.4em;
+    padding: 0.5em;
 }
 form {
 	margin: 0;
+}
+.event {
+	width: 10em;
+}
+
+textarea#styled {
+	width: 27em;
+	height: 13em;
+	border: 3px solid #cccccc;
+	padding: .4em;
+	color: gray;
+	border-radius: .6em;
 }
