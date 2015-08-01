@@ -1,7 +1,11 @@
+
 .menu.container, .select{
 	display: flex;
 	justify-content:space-around;
-	background-color: lightgray;
+	border:5px double antiquewhite;
+}
+.chalkboard {
+	background-image: url(images/chalk_background.jpg);
 }
 
 .caption  h4 {
@@ -9,7 +13,8 @@
 }
 
 .caption .price {
-	margin-left: 1em;
+	float: right;
+	margin-left: 1.5em;
 }
 
 .caption p {
@@ -26,4 +31,7 @@
 }
 .table li {
 	list-style: none;
+}
+.table {
+	padding: 0;
 }
