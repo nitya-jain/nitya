@@ -1,20 +1,55 @@
+body {
+	color:#F3F2F2;
+}
+h2, h3, h4, .menu p {
+	color: #F3F2F2;
+}
 
 .menu.container, .select{
 	display: flex;
 	justify-content:space-around;
-	border:5px double antiquewhite;
+}
+.menu.container {
+	padding-bottom: 2em;
+	border:5px double #F3F2F2;
 }
 .chalkboard {
 	background-image: url(images/chalk_background.jpg);
+	padding-bottom: 5em;
+}
+
+.container.banner h2 {
+	font-size: 1.8em;
+	margin-top: 0;
+}
+.call {
+	border:3px double skyblue;
+	padding-left: 2em;
+    padding-right: 3em;
+    padding-bottom: 2em;
+    margin-top: 3em;
+}
+
+.call h3 {
+	border-bottom: 4px double;
+	margin-top: 1em;
 }
 
 .caption  h4 {
 	margin-bottom: 0;
+	padding-top: 0.8em;
+	font-size: 1.2em;
 }
 
 .caption .price {
 	float: right;
 	margin-left: 1.5em;
+	border-radius: 50%;
+    min-width: 2.5em;
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding: 0.4em;
 }
 
 .caption p {
@@ -25,13 +60,21 @@
 	text-align: center;
 	text-decoration: underline;
 }
+div.pick {
+	padding: 1em;
+}
 .pick h4 {
 	margin-top: 0.7em;
-	text-align: center;
+	display: inline;
+	border-bottom: 3px solid white;
 }
+
 .table li {
 	list-style: none;
 }
 .table {
 	padding: 0;
+}
+.price {
+
 }
