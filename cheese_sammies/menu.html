@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta char set="utf8">
+	<title> Cheese Sammies/Menu</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href="normalize.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="main.css" text="type/css">
+	<link rel="stylesheet" href="menu.css" text="type/css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+</head>
+
+<body class="homepage">
+	<header id="header">
+		<div class="container">
+			<a id="logo" href="http://www.cheesesammies.com">
+				<img class="main-logo" src="images/cs.svg" 
+				alt="C.S."/>
+			</a>
+			<div class="name">
+				<img src="images/logo.svg" alt="logo"/>
+			</div>
+			<div class="nav">
+				<ul>
+					<li>
+					<a href="http://www.cheesesammies.com">Home</a>
+					</li>
+					<li>
+					<a href="http://www.cheesesammies.com/menu">Menu</a>
+					</li>
+					<li>
+					<a href="http://www.cheesesammies.com/location">Location</a>
+					</li>
+					<li>
+					<a href="http://www.cheesesammies.com/about">About</a>
+					</li>
+					<li>
+					<a href="http://www.cheesesammies.com/contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div class="chalkboard">
+		<div class="container banner">
+			<h2>Menu</h2>
+		</div>
+
+		<section class="menu container">
+			<div class="content">
+				<div class="caption">
+					<h4>CLASSIC</h4>
+				</div>
+				<div class="caption">
+					<p>1 cheese no topping <span class="price">$8</span></p>
+				</div>
+				<div class="caption">
+					<h4>DOUBLE</h4>
+				</div>
+				<div class="caption">
+					<p>2 cheese no topping<span class="price">$10</span></p>
+				</div>
+				<div class="caption">
+					<h4>ADD TOPPINGS</h4>
+				</div>
+				<div class="caption">
+					<p>3 toppings max, each.<span class="price">$1</span></p>
+				</div>
+				<div class="call">
+					<div class="caption">
+						<h3>Make it a Combo</h3>
+					</div>
+					<div class="caption">
+						<h4>Single  <span class="price">+$3</span></h4>
+						<p>1 side + 1 drink</p>	
+					</div>
+					<div class="caption">
+						<h4>All In<span class="price">+$4</span></h4>
+						<p>2 sides + 1 drink</p>	
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="option">
+					<h3>CHOOSE</h3>	
+					<div class="select">
+						<div class="pick">
+							<h4>Bread</h4>
+							<ul class="table">
+								<li>Sourdough</li>
+								<li>White</li>
+								<li>Rye</li>
+								<li>Whole Wheat</li>
+							</ul>
+						</div>
+						<div class="pick">
+							<h4>Cheese</h4>
+							<ul class="table">
+								<li>Cheddar</li>
+								<li>Swiss</li>
+								<li>Brie</li>
+								<li>Blue Cheese</li>
+								<li>Gouda</li>
+								<li>Mozarella</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="option">
+					<h3>TOPPINGS</h3>
+					<div class="select">
+						<div class="pick">
+							<h4>Meats</h4>
+							<ul class="table">
+								<li>Bacon</li>
+								<li>Roast Beef</li>
+								<li>Roasted Turkey</li>
+								<li>Roasted Chicken</li>
+								<li>Ham</li>
+							</ul>
+						</div>
+						<div class= "pick">
+							<h4>Veg</h4>
+							<ul class="table">
+								<li>Caramelized Onions</li>
+								<li>Tomato</li>
+								<li>Avocado</li>
+								<li>Mushrooms</li>
+								<li>Pickles</li>
+								<li>Arugula</li> 
+							 	<li>Apple</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content">
+				<div class="caption">
+					<h4>SIDES<span class="price">$3</span></h4>
+				</div>
+				<div class="pick">
+					<ul class="table">
+						<li>Fries</li>
+						<li>Greens</li>
+						<li>Onion rings</li>
+					</ul>
+				</div>
+				<div class="caption">
+					<h4>DRINKS<span class="price">$2</span></h4>	
+				</div>
+				<div class="pick">
+					<ul class="table">
+						<li>Lemonade</li>
+						<li>Italian Soda</li>
+						<li>Water</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+
+<section class="bottom">
+		<footer class="container footer">
+			<div class="one-third">
+				<h4>Hello there!</h4>
+				<p>My name is Bryan and I love cheese!</p>
+				<p>I was born and raised in East Boston. After a long stint
+                                  in video production,I quit my job and am here in my community,
+                                  to make the best grilled sandwiches for you in under
+                                  ten minutes. So come and enjoy.</p>
+			</div>
+
+			<div class="one-third">
+				<h4>Locations</h4>
+                                <div id="map-container">
+                                </div>
+			</div>
+
+			<div class="one-third">
+				<h4>Schedule</h4>
+				<div id="place1" class="location">
+					<div class="address">
+						<a href="#">Downtown</br>City Hall Plaza.<span>-Fisher Park</span></a>
+					</div>
+					<div class="day">
+						<p>MON</p>
+					</div>
+				</div>
+				<div id="place2" class="location">
+					<div class="address">
+						<a href="#">South End - Harrison Ave &amp<br/> E Concord St, by BMC</a>
+					</div>
+					<div class="day">
+						<p>TUE<br/>THU</p>
+					</div>
+				</div>
+				<div id="place3" class="location">
+					<div class="address">
+						<a href="#">Back Bay</br>Trinity Place</a>
+					</div>
+					<div class="day">
+						<p>WED<br/>FRI</p>
+					</div>
+				</div>
+				<div id="place4" class="location">
+					<div class="address">
+						<a href="#">Dudley square</br>Dudley Street</a>
+					</div>
+					<div class="day">
+						<p>SAT</p>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">&copy; CHEESE SAMMIES, ALL RIGHTS RESERVED.
+			</div>
+		</footer>
+	</section>
+<script type='text/javascript'>//<![CDATA[ 
+$(function () {
+    var mapOptions = {
+        center: new google.maps.LatLng(42.3598697, -71.0584351),
+        zoom: 12,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true
+    }
+    var image = {
+        url: "Food-Truck-Icon.png",
+        size: new google.maps.Size(45, 45),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(22, 44)
+    };
+    var map = new google.maps.Map($("#map-container")[0], mapOptions);
+    var locations = {
+        place1: new google.maps.LatLng(42.3590414, -71.0632409),
+        place2: new google.maps.LatLng(42.3228611,-71.0800759),
+        place3: new google.maps.LatLng(42.3529135, -71.0778234),
+        place4: new google.maps.LatLng(42.3486047,-71.0753806)
+    };
+    $("div.location")
+    .each(function (i) {
+        this.mapMarker = new google.maps.Marker({
+            position:
+            locations[this.id],
+            icon: image,
+            map: map});
+    })
+    .mouseenter(function() {
+        this.mapMarker.setAnimation(google.maps.Animation.DROP);
+    })
+    .mouseleave(function() {
+        this.mapMarker.setAnimation(null);
+    })
+    .click(function() {
+        map.panTo(this.mapMarker.getPosition());
+        map.setZoom(15);
+    })
+    ;
+});
+//]]>  
+</script>
+</body>
+</html>

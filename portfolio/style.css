@@ -1,7 +1,10 @@
 
 
-main {
+main.ui.pusher.grid {
     min-height: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 section {
     min-height: 400px;
@@ -16,9 +19,18 @@ div#logo {
     padding: 10px;  
 }
 section#home {
-    background-image:url(images/home.jpg);
+    background-color:#9BC1BC;
     background-size: cover;
-    height:500px;
+}
+#home  {
+    position: relative;
+}
+#home .open {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin: -1em;
+    text-align: center;
 }
 section#about {
     background-image:url(images/profile.jpg);
@@ -27,7 +39,7 @@ section#about {
     right:0;
 }
 
-section#portfoli {
+section#portfolio {
     background-color: #BAC1B8;
     height:650px;
 } 
