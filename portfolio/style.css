@@ -7,7 +7,7 @@ main.ui.pusher.grid {
     margin-bottom: 0;
 }
 section {
-    min-height: 400px;
+    min-height: 100%;
 }
 .menu a {
     font-size: 48px;
@@ -18,8 +18,9 @@ div#logo {
     padding: 10px;  
 }
 section#home {
-    background-color:#9BC1BC;
+    background-image:url(images/home.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 #home  {
     position: relative;
@@ -32,14 +33,16 @@ section#home {
     text-align: center;
 }
 section#about {
-    background-image:url(images/profile.jpg);
-    height:500px;
+    background-image:url(images/profile_im.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     right:0;
 }
 
 section#portfolio {
-    background-color: #BAC1B8;
+     background-image:url(images/work.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 } 
 
 section#contact {
