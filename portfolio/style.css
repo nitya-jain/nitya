@@ -10,12 +10,40 @@ section {
     min-height: 100%;
 }
 .menu a {
-    font-size: 48px;
+    font-size: 2.8em;
+    text-align: center;
+    position: relative;
+    height: 150px;
+}
+.ui.vertical.inverted.menu .item:before {
+    background: none;
+}
+.menu a .letter {
+    height: 100%;
+    line-height: 200%;
+}
+.menu a .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 0.4em;
+    text-align: center;
+    padding-bottom: 1em;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.menu a .overlay span {
+    border-bottom: 1px solid red;
+}
+.menu a:hover .overlay {
+    opacity: 1;
 }
 div#logo {
     text-align: center; 
     width: 100%;
-    padding: 10px;  
+    padding: 10px;
 }
 section#home {
     background-image:url(images/home.jpg);
@@ -38,24 +66,20 @@ section#about {
     background-repeat: no-repeat;
     right:0;
 }
-
 section#portfolio {
      background-image:url(images/work.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 } 
-
 section#contact {
     background-image:url(images/contact.jpg);
     background-repeat: no-repeat;
 }
-
 .ui.form.segment {
     background-color: transparent;
     padding: 2em;
     margin-top: 2em;
 }
-
 #portfolio .ui.card {
     box-shadow: 0 0 0 1px #0505F3,0 2px 0 0 #1D3140,0 1px 3px 0 #010182;
 }
