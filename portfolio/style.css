@@ -55,13 +55,13 @@ section#home {
 }
 #home .open {
     position: absolute;
-    top: 50%;
-    width: 100%;
+    top: 15%;
+    right: 25%;
     margin: -1em;
     text-align: center;
 }
 section#about {
-    background-image:url(images/profile_im.jpg);
+    background-image:url(images/profile_im1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     right:0;
@@ -81,5 +81,17 @@ section#contact {
     margin-top: 2em;
 }
 #portfolio .ui.card {
-    box-shadow: 0 0 0 1px #0505F3,0 2px 0 0 #1D3140,0 1px 3px 0 #010182;
+    max-width: 340px;
+    display: inline-block;
+    margin-right: 40px;
+    padding: 5px;
+    margin-bottom: 40px;
+
+}   
+.project-grid {
+    padding: 50px;
+    display: inline-block;
+    text-align: center;
 }
+
+
