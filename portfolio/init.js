@@ -28,3 +28,7 @@ $("main section")
     onBottomPassedReverse: activate
   });
 });
+$("#project1").click(function (e) {
+    $("#project_frame").attr('src', 'project1.html');
+    $(".ui.modal").modal("show");
+});
