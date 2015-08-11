@@ -55,11 +55,20 @@ section#home {
 }
 #home .open {
     position: absolute;
-    top: 15%;
-    right: 25%;
+    top: 5em;
+    right: 18em;
     margin: -1em;
     text-align: center;
 }
+#home h2 {
+    font-size: 3em;
+    color: #211D1D;
+}
+#home p {
+    font-size: 1.8em;
+    color: #A50D0D;
+}
+
 section#about {
     background-image:url(images/profile_im1.jpg);
     background-size: cover;
