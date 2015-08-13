@@ -29,6 +29,22 @@ $("main section")
   });
 });
 $("#project1").click(function (e) {
+    $("#portfolio_header").html('Web');
     $("#project_frame").attr('src', 'project1.html');
+    $(".ui.modal").modal("show");
+});
+$("#project2").click(function (e) {
+    $("#portfolio_header").html('UX/UI');
+    $("#project_frame").attr('src', 'project2.html');
+    $(".ui.modal").modal("show");
+});
+$("#project_wireframe").click(function (e) {
+    $("#portfolio_header").html('Wireframes');
+    $("#project_frame").attr('src', 'wireframe.html');
+    $(".ui.modal").modal("show");
+});
+$("#project_object").click(function (e) {
+    $("#portfolio_header").html('Objects');
+    $("#project_frame").attr('src', 'object.html');
     $(".ui.modal").modal("show");
 });
