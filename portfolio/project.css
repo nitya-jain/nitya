@@ -4,6 +4,9 @@ body {
 .project.content {
     padding-right:2em;
 }
+.description p {
+    font-size: 1.2em;
+}
 .jssora12l, .jssora12r {
     display: block;
     position: absolute;
