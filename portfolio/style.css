@@ -74,7 +74,26 @@ section#about {
     background-size: cover;
     background-repeat: no-repeat;
     right:0;
+    color: white;
 }
+#about > div {
+    padding-left: 3em;
+    padding-top: 3em;
+}
+#about .intro {
+    display: inline-block;
+}
+#about .intro h3 {
+    text-align: right;
+}
+#about .info {
+    margin-top: 3em;
+    font-size: 1.2em;
+}
+#about .info p { width: 550px;}
+#about .info p:nth-child(1) { width: 700px;}
+#about .info p:nth-child(2) { width: 650px;}
+#about .info p:nth-child(3) { width: 600px;}
 section#portfolio {
      background-image:url(images/work.jpg);
     background-size: cover;
