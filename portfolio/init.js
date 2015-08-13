@@ -48,3 +48,13 @@ $("#project_object").click(function (e) {
     $("#project_frame").attr('src', 'object.html');
     $(".ui.modal").modal("show");
 });
+$("#project_spaces").click(function (e) {
+    $("#portfolio_header").html('Spaces');
+    $("#project_frame").attr('src', 'spaces.html');
+    $(".ui.modal").modal("show");
+});
+$("#project_print").click(function (e) {
+    $("#portfolio_header").html('Print');
+    $("#project_frame").attr('src', 'print.html');
+    $(".ui.modal").modal("show");
+});

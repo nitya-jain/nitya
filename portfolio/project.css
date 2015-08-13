@@ -4,8 +4,11 @@ body {
 .project.content {
     padding-right:2em;
 }
+.project.content button {
+    margin-top: 1.5em;
+}
 .description p {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .jssora12l, .jssora12r {
     display: block;
