@@ -85,6 +85,7 @@ section#about {
 }
 #about .intro h3 {
     text-align: right;
+    padding-right: 0.5em;
 }
 #about .info {
     margin-top: 3em;
