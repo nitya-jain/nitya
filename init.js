@@ -29,32 +29,22 @@ $("main section")
   });
 });
 $("#project1").click(function (e) {
-    $("#portfolio_header").html('Web');
+    $("#portfolio_header").html('WEB & APP DESIGN');
     $("#project_frame").attr('src', 'project1.html');
-    $(".ui.modal").modal("show");
+    $(".fullscreen.modal").modal("show");
 });
 $("#project2").click(function (e) {
-    $("#portfolio_header").html('UX/UI');
+    $("#portfolio_header").html('DIGITAL ADVERTISING');
     $("#project_frame").attr('src', 'project2.html');
-    $(".ui.modal").modal("show");
-});
-$("#project_wireframe").click(function (e) {
-    $("#portfolio_header").html('Wireframes');
-    $("#project_frame").attr('src', 'wireframe.html');
-    $(".ui.modal").modal("show");
+    $(".fullscreen.modal").modal("show");
 });
 $("#project_object").click(function (e) {
     $("#portfolio_header").html('Objects');
     $("#project_frame").attr('src', 'object.html');
-    $(".ui.modal").modal("show");
-});
-$("#project_spaces").click(function (e) {
-    $("#portfolio_header").html('Spaces');
-    $("#project_frame").attr('src', 'spaces.html');
-    $(".ui.modal").modal("show");
+    $(".fullscreen.modal").modal("show");
 });
 $("#project_print").click(function (e) {
-    $("#portfolio_header").html('Print');
+    $("#portfolio_header").html('PRINT & GRAPHIC DESIGN');
     $("#project_frame").attr('src', 'print.html');
-    $(".ui.modal").modal("show");
+    $(".fullscreen.modal").modal("show");
 });

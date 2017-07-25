@@ -26,3 +26,23 @@ body {
 .jssora12r:hover { background-position: -195px -37px; }
 .jssora12l.jssora12ldn { background-position: -256px -37px; }
 .jssora12r.jssora12rdn { background-position: -315px -37px; }
+.project .description {
+    height: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 30px;
+}
+.project .description p {
+    color: #777;
+    font-size: 18px;
+}
+.project .description ul li {
+    color: #777;
+    font-size: 18px;
+}
+.project .description ul {
+    list-style: square;
+}
+.project .description ul li {
+    line-height: 1.5em;
+}
